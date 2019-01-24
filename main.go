@@ -15,6 +15,9 @@ func init() {
 }
 
 func main() {
-	fmt.Println("Data Feeds - Entry point ...")
-	search.Run("Search")
+	fmt.Println("Enter phrase to search for and press ENTER:\n")
+
+	var term string
+	fmt.Scanln(&term)
+	search.Run(term)
 }

@@ -13,6 +13,8 @@ const feedsDataFile = "data/data.json"
 // Struct that represents feed data,
 // and it is used for its processing.
 type Feed struct {
+	// Last part containing 'json:<field>' defines id tag with JSON annotation
+	// which can be interpreted by Go's JSON encoder and decoder.
 	Name string `json:"site"`
 	URI  string `json:"link"`
 	Type string `json:"type"`
